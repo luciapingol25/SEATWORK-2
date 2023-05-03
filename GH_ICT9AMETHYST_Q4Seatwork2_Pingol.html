@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time Converter|Minutes to days, to hours, to seconds</title>
+</head>
+		<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<body style="background-image: url(https://img.freepik.com/premium-vector/cute-big-pastel-green-checkers-gingham-plaid-aesthetic-checkerboard-pattern-wallpaper-illustration-perfect-wallpaper-backdrop-postcard-background-your-design_565280-692.jpg?w=2000);"><br><br>
+	
+		<center>
+	<div class="container">
+      <h1>Minutes Converter</h1>
+      <input type="number" id="minutes" placeholder="Enter minutes to convert"/><br><br>
+      <button class="btn btn-primary" onclick="convert()">Convert</button>
+      <div class="card">
+        <p id="hours"></p>
+        <p id="days"></p>
+        <p id="seconds"></p>
+      </div>
+    </div>
+    <script>
+      function convert() {
+        var minutes = document.getElementById("minutes").value;
+        var hours = minutes / 60;
+        var days = hours / 24;
+        var seconds = minutes * 60;
+        document.getElementById("hours").innerHTML = "Hours: " + hours.toFixed(2);
+        document.getElementById("days").innerHTML = "Days: " + days.toFixed(2);
+        document.getElementById("seconds").innerHTML = "Seconds: " + seconds;
+      }
+    </script>
+</table>
+</table>
+</center>
+</body>
+<script>
+</script>
+</html>
